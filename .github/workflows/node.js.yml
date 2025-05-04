@@ -5,9 +5,9 @@ name: Node.js CI
  
 on:
   push:
-    branches: [ "main" ]
+    branches: main
   pull_request:
-    branches: [ "main" ]
+    branches: main
  
 jobs:
   build-test:
@@ -38,7 +38,7 @@ jobs:
 
       # Run Snyk to check for vulnerabilities
     - name: Run Snyk 
-      uses: snyk/actions/node@main
+      uses: snyk/actions/node@master
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:

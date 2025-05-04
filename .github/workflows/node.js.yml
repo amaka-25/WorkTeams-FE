@@ -38,7 +38,7 @@ jobs:
 
       # Run Snyk to check for vulnerabilities
     - name: Run Snyk
-      uses: snyk/actions@main
+      uses: snyk/actions@refs/tags/v0.4.0
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:

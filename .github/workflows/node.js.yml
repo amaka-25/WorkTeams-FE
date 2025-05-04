@@ -37,8 +37,8 @@ jobs:
       run: npm run build --if-present
 
       # Run Snyk to check for vulnerabilities
-    - name: Install Snyk CLI
-      uses: npm install -g snyk
+    - name: Run Snyk 
+      uses: snyk/actions/node@master
     - name: Run Snyk Scan
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

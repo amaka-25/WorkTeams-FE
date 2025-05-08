@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    git 'Default'
     tools {
         nodejs 'NodeJs' // Assumes NodeJs plugin with 'Node16' installation configured
+        git 'Default'
     }
     stages {
         stage('Checkout') {

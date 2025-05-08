@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs 'Node24' // Assumes NodeJS plugin with 'Node24' installation configured
+        nodejs 'NodeJs' // Assumes NodeJS plugin with 'Node24' installation configured
     }
     stages {
         stage('Checkout') {

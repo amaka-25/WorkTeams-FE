@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs 'NodeJs' // Assumes NodeJs plugin with 'Node24' installation configured
+        nodejs 'Nodejs' // Assumes NodeJs plugin with 'Node16' installation configured
     }
     stages {
         stage('Checkout') {
@@ -20,6 +20,7 @@ pipeline {
             }
         }
         
+    }
     post {
         always {
             cleanWs()
@@ -31,5 +32,4 @@ pipeline {
             echo 'Build failed!'
         }
     }
- }
 }

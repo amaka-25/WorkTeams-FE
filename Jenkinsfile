@@ -1,11 +1,11 @@
 pipeline {
     agent any
     tools {
-        nodejs 'Node16' // Assumes NodeJS plugin with 'Node16' installation configured
+        nodejs 'Node24' // Assumes NodeJS plugin with 'Node24' installation configured
     }
     stages {
         stage('Checkout') {
-            steps {]6
+            steps {
                 git branch: 'main', url: 'https://github.com/amaka-25/WorkTeams-FE.git/.'
             }
         }

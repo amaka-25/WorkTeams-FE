@@ -31,4 +31,4 @@ pipeline {
             echo 'Build failed!'
         }
     }
-}
+

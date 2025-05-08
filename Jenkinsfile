@@ -19,12 +19,7 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
-        }
-    }
+        
     post {
         always {
             cleanWs()

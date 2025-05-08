@@ -31,6 +31,7 @@ pipeline {
             echo 'Build and deployment successful!'
         }
         failure {
+            continue-on-faild = true
             echo 'Build failed!'
         }
     }

@@ -10,13 +10,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/amaka-25/WorkTeams-FE.git'
             }
         }
-       stage('Install Dependencies') {
+        stage('Install Dependencies') {
             steps {
                 sh 'npm install'
             }
         }
     
-      stage('Build') {
+        stage('Build') {
             steps {
                 sh 'npm run build'
             }

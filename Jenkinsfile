@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/amaka-25/WorkTeams-FE.git'
+                git branch: 'main', url: 'https://github.com/amaka-25/WorkTeams-FE.git'
             }
         }
         stage('Install Dependencies') {
